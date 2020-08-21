@@ -64,31 +64,19 @@ where (ST.ts_saled::date = '2020-01-07')
 #
 EXEMPLO:
 
-        select ST.customer_name as Passageiro, 
-
-        ST.price_base as Tarifa,
-        
-        ST.price_board_tax as tx_Embarque,
-        
+	select ST.customer_name as Passageiro, 
+	ST.price_base as Tarifa,
+	ST.price_board_tax as tx_Embarque,
 	ST.price_insurance as Seguro,
-        
 	ST.price_toll as custos_extras,
-        
 	ST.price_discount as descontos,
-        
 	ST.status_id as status
-        
-	from sisb_ticket ST, sisb_ticket_fiscal STF
-        
-        where (ST.id = STF.ticket_id) 
-
-	and (ST.ts_saled::date = '2020-01-07')
-        
-        and (STF.code_return in (100, 150))
-
-	and (ST.ts_canceled is null)
-        
-        and (ST.status_id in (1,4,5))
+		from sisb_ticket ST, sisb_ticket_fiscal STF
+			where (ST.id = STF.ticket_id) 
+			and (ST.ts_saled::date = '2020-01-07')
+			and (STF.code_return in (100, 150))
+			and (ST.ts_canceled is null)
+			and (ST.status_id in (1,4,5))
 
 #
 - BETWEEN 10 AND 20 (Serve para fazer a pesquisa entre dois valores).
@@ -96,8 +84,7 @@ EXEMPLO:
 #
 - Join serve para juntar cruzar as informações de duas tabelas.
 
-#
-exemplo
+EXEMPLO:
 
 from "tabela 1"
 JOIN "tabela 2" ON "campo tabela 1" = "campo tabela 2"
