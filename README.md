@@ -32,19 +32,19 @@ NOT: negação
 
 - Operadores relacionais permitem fazer comparações nas consultas:
 
- < Menor
+'< Menor'
  
- < Maior
+'< Maior'
  
- <= Menor ou igual
+'<= Menor ou igual'
  
- >= Maior ou igual
+'>= Maior ou igual'
  
- = Igual
+'= Igual'
  
- <> Diferente
+'<> Diferente'
  
- between 'entre'
+ 'between 'entre''
  
 
 - as = utilizado no campo de colunas pesquisadas para mudar o nome da coluna;
