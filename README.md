@@ -87,13 +87,17 @@ EXEMPLO:
 EXEMPLO:
 
 from "tabela 1"
+
 JOIN "tabela 2" ON "campo tabela 1" = "campo tabela 2"
 
-
+#
 select su."name",su.username,sg.id,sg."name" from sisb_user su 
-	join sisb_user_usergrp suu on suu.user_id = su.id
-	join sisb_usergroup sg on sg.id = suu.usergrp_id 
-	where sg.id = 12
+
+join sisb_user_usergrp suu on suu.user_id = su.id
+
+join sisb_usergroup sg on sg.id = suu.usergrp_id 
+
+where sg.id = 12
         
 #       
 - SELECT COUNT(id) from "tabela";
