@@ -87,7 +87,7 @@ EXEMPLO:
 EXEMPLO:
 
 	from "tabela 1"
-	JOIN "tabela 2" ON "campo tabela 1" = "campo tabela 2"
+		JOIN "tabela 2" ON "campo tabela 1" = "campo tabela 2"
 
 #
 	select su."name",su.username,sg.id,sg."name" from sisb_user su 
